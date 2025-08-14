@@ -11,7 +11,7 @@ git clone https://github.com/2575044704/QMIDIcore-Quaver-Stream
 cd QMIDIcore-Quaver-Stream
 apt install -y ffmpeg
 g++ -O3 -I. *.cpp -o QQS
-./QQS -mid=xxx.mid -vid=xxx.mp4 -codr=hevc_nvenc -ppb=1536 -wei=1920 -hei=1080 #推荐
+./QQS -mid=xxx.mid -vid=xxx.mp4 -codr=libx265 -ppb=1536 -wei=1920 -hei=1080 -keyh=110 #推荐
 ```
 ```
 
