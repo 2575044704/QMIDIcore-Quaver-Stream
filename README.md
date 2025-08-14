@@ -11,7 +11,7 @@ git clone https://github.com/2575044704/QMIDIcore-Quaver-Stream
 cd QMIDIcore-Quaver-Stream
 apt install -y ffmpeg
 g++ -O3 -I. *.cpp -o QQS
-./QQS -mid=NECRO.mid -vid=NECRO.mp4 -ppb=3500 -wei=1920 -hei=1080
+./QQS -mid=NECRO.mid -vid=NECRO.mp4 -ppb=3500 -wei=1920 -hei=1080 -fthr=5
 ```
 ```
 
