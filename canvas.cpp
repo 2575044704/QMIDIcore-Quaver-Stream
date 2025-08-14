@@ -20,7 +20,7 @@ void CANVAS::initcanvas(string arg)
 	conv<<"ffmpeg -y -hide_banner -f rawvideo -pix_fmt rgba";
 	conv<<" -s "<<canvasw<<"x"<<canvash<<" -r "<<fps;
 	conv<<" -i - -vf vflip -pix_fmt yuv420p -crf 12 "<<arg;
-	ffpipe=popen(conv.str().c_str(),"wb");
+	ffpipe=popen(conv.str().c_str(),"w");
 	candat=new unsigned int[canvash*canvasw];
 	for(i=0;i<128;++i)
 		keyx[i]=(i/12*126+genkeyx[i%12])*canvasw/1350;
