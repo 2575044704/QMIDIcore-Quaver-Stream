@@ -7,9 +7,11 @@ clang++ -O3 -I. *.cpp -s -o QQS
 ./QQS 可以获得完整的帮助信息！
 
 ```bash
+git clone https://github.com/2575044704/QMIDIcore-Quaver-Stream
+cd QMIDIcore-Quaver-Stream
 apt install -y ffmpeg
 g++ -O3 -I. *.cpp -o QQS
-./QQS -mid=Rekt_Apple.mid -vid=gpu_h265.mp4 -codr=hevc_nvenc #推荐
+./QQS -mid=xxx.mid -vid=xxx.mp4 -codr=hevc_nvenc -ppb=250 -wei=1920 -hei=1080 #推荐
 ```
 ```
 
